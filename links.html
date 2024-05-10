@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+           # = id
+           . = calss
+           : = pseudo-class
+           :: = pseudo-element
+           > = clildren
+        
+        */ 
+
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        a:visited {
+            color: rgb(14, 0, 139);
+            /* Quando o link for visitado */ 
+        }
+        a:hover { 
+            text-decoration: underline;
+            color: red;
+            /* Quando passar o mouse sobre o link */ 
+        }
+        a:active {
+            color: rgb(204, 0, 255);
+            /* Quando link está aberto */
+        }
+        .especial {
+            background-color: rgba(9, 0, 139, 0.37);
+            
+        }
+        .especial::before {
+            content: ' > ';
+
+        }
+        a.especial::after {
+            content: ' <  ';
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Jordankennedyfig" class="especial">Meu GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCQAc2ub46rru_WYaIsnxe4Q">Canal do YouTube</a></li>
+        <li><a href="https://jordankennedyfig.github.io/akarato/" class="especial">Site Aka Rato</a></li>
+        
+    </ul>
+
+</body>
+</html>
